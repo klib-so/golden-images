@@ -45,7 +45,7 @@
         "grub-installer/bootdev=/dev/sda <wait>",
         "<enter><wait>"
       ],
-      "boot_wait": "5s",
+      "boot_wait": "8s",
       "disk_size": 81920,
       "guest_os_type": "Debian_64",
       "headless": true,
