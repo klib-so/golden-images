@@ -1,6 +1,6 @@
 {
   "variables": {
-    "version": "0.1.0"
+    "version": "{{ env `BOX_VERSION`}}"
   },
   "provisioners": [
     {
@@ -17,6 +17,14 @@
       "type": "ansible-local",
       "playbook_file": "../shared/main.yml",
       "galaxy_file": "../shared/requirements.yml"
+    },
+    {
+      "type" : "ansible-local",
+      "playbook_file": "../bootstrap/site.yaml",
+      "extra_arguments": [
+        "--tags ",
+        "installation"
+      ]
     },
     {
       "type": "shell",
