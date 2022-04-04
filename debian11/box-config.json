@@ -90,7 +90,7 @@
   "post-processors": [
     [
       {
-        "output": "builds/{{.Provider}}-debian11.box",
+        "output": "builds/proto-deb11-{{ user `version` }}.box",
         "type": "vagrant"
       }
     ]
