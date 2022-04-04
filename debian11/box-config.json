@@ -19,8 +19,9 @@
       "galaxy_file": "../shared/requirements.yml"
     },
     {
-      "type" : "ansible",
+      "type" : "ansible-local",
       "playbook_file": "../bootstrap/site.yaml",
+      "galaxy_file": "../bootstrap/requirements.yml",
       "extra_arguments": [
         "--tags ",
         "installation"
