@@ -21,11 +21,9 @@
     {
       "type" : "ansible-local",
       "playbook_file": "../bootstrap/site.yaml",
+      "playbook_dir": "../bootstrap",
       "galaxy_file": "../bootstrap/requirements.yml",
-      "extra_arguments": [
-        "--tags ",
-        "installation"
-      ]
+      "extra_arguments": "--tags=installation"
     },
     {
       "type": "shell",
