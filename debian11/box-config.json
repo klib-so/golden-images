@@ -23,7 +23,6 @@
       "playbook_file": "../bootstrap/site.yaml",
       "playbook_dir": "../bootstrap",
       "inventory_groups": "consul_instances,vault_instances,nomad_instances,staging",
-      "galaxy_file": "../bootstrap/requirements.yml",
       "extra_arguments": "--tags=packer"
     },
     {
