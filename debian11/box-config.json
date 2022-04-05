@@ -22,6 +22,7 @@
       "type" : "ansible-local",
       "playbook_file": "../bootstrap/site.yaml",
       "playbook_dir": "../bootstrap",
+      "group_vars": "../bootstrap/group_vars",
       "galaxy_file": "../bootstrap/requirements.yml",
       "extra_arguments": "--tags=installation"
     },
